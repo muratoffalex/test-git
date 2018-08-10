@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="System of tasks for SQL-requests">
+		<meta name="author" content="muratoffalex@gmail.com">
+		<link rel="icon" href="favicon.ico">
+
+		<title>SQL-Trainer</title>
+
+		<!-- Bootstrap core CSS -->
+		 <link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<!-- Custom styles for this template -->
+		<link href="css/offcanvas.css" rel="stylesheet">
+		<link href="css/fontawesome-all.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body class="bg-light">
+		<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+			<div class="container">
+			<a class="navbar-brand text-light" href="index.html"><strong>SQL</strong>-система</a>
+				<button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					<span class="badge badge-pill bg-dark align-text-center">1</span>
+				</button>
+
+			<div class="navbar-collapse collapse" id="menu">
+				<ul class="navbar-nav main mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="profile.html">Профиль</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Управление</a>
+						<div class="dropdown-menu main" aria-labelledby="dropdown01">
+							<a class="dropdown-item" href="#"><i class="fas fa-users-cog"></i> Пользователи</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-th-list"></i> Категории</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-database"></i> Базы данных</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-tasks"></i> Задания</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-check"></i> Результаты</a>
+						</div>
+					</li>
+
+				</ul>
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#"><span class="badge badge-pill align-text-bottom">1</span><i class="fas fa-comments"></i></a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#"><span class="badge badge-pill align-text-bottom">2</span><i class="far fa-bell"></i></a>
+
+          <ul class="dropdown-menu notify-drop box-shadow">
+            <div class="notify-drop-title">
+            	<div class="row">
+            		<div class="col-md-9 col-sm-9 col-9">Оповещения (<b>2</b>)</div>
+            		<div class="col-md-3 col-sm-3 col-3 text-right"><a href="javascript:void(0);" class="rIcon allRead" data-toggle="tooltip" data-placement="bottom" title="Прочитать всё"><i class="fas fa-circle"></i></a></div>
+            	</div>
+            </div>
+
+            <div class="drop-content">
+            	<li>
+	            	<!-- <div class="col-md-3 col-sm-3 col-3"><div class="notify-img"><img src="http://placehold.it/45x45" alt=""></div></div> -->
+	            	<div class="col-md-12"><a href="">muratoffalex</a> оценил <a href="">Задание 1</a> <!-- <a href="" class="rIcon"><i class="fas fa-circle"></i></a> -->
+	            	
+	            	<br>
+	            	<p class="time">Только что</p>
+	            	</div>
+            	</li>
+            	<li>
+	            	<!-- <div class="col-md-3 col-sm-3 col-3"><div class="notify-img"><img src="http://placehold.it/45x45" alt=""></div></div> -->
+	            	<div class="col-md-12"><a href="">Пирогов В.Ю.</a> оценил <a href="">ваше задание</a> <a href="" class="rIcon"><i class="fas fa-circle"></i></a>
+	            	<p>Оценка: 5 отлично</p>
+	            	<p class="time">2 часа назад</p>
+	            	</div>
+            	</li>
+            	<div class="history">
+            		<p class="pl-3">Просмотренные</p>
+            	</div>
+            	<li>
+	            	<!-- <div class="col-md-3 col-sm-3 col-3"><div class="notify-img"><img src="http://placehold.it/45x45" alt=""></div></div> -->
+	            	<div class="col-md-12"><a href="">Пирогов В.Ю.</a> оценил <a href="">ваше задание</a>
+	            	<p>Оценка: 5 отлично</p>
+	            	<p class="time">2 часа назад</p>
+	            	</div>
+            	</li>
+            </div>
+            <div class="notify-drop-footer text-center">
+            	<a href=""><i class="fa fa-eye"></i> Показать все</a>
+            </div>
+          </ul>
+
+
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="nav-scroller bg-white border-custom mb-1">
+			<div class="container">
+				<nav class="nav nav-underline">
+					<a class="nav-link border-right border-left" href="#"><i class="fas fa-bars"></i></a>
+					<a class="nav-link active" href="tasks.html">Каталог заданий</a>
+					<a class="nav-link" href="finish.html">Завершённые</a>
+					<a class="nav-link" href="notfinish.html">
+						Незавершённые
+						<span class="badge badge-pill bg-light align-text-bottom">3</span>
+					</a>
+					<a class="nav-link" href="tourney.html">Олимпиады</a>
+				</nav>
+			</div>
+		</div>
+
+		<main role="main" class="container pb-3">
+
+			<div class="row">
+
+			<div class="col-md-3">
+				<div class="mt-2">
+					<div class="search text-muted">
+						<input type="text" placeholder="Поиск">
+						<button type="button" class="small"><i class="fas fa-search"></i></button>
+					</div>
+				</div>
+				<div class="text-muted small p-2">Категории заданий</div>
+				<div class="menu-tabs">
+					<div class="tab-menu">
+						<div class="head-menu text-muted bg-white block">
+							<div href="#" class="p-2">Тема 1 <!-- <i class="fas fa-info-circle small" data-toggle="tooltip" data-placement="bottom" title="Простые SQL-запросы"></i> --><div class="float-right"><a href="#" class="text-muted menu-visible icon-hover" title="Свернуть / Развернуть"><i class="fas fa-angle-down"></i></a></div></div>
+						</div>
+							<div class="row menu-body" style="display: none;">
+								<ul class="col-lg-12 menu">
+									<li>
+										<a href="profile.html" class="pl-3 text-dark active">Задание 1</a>
+									</li>
+									<li>
+										<a href="messages.html" class="pl-3 text-dark">Задание 2</a>
+									</li>
+									<li>
+										<a href="#" class="pl-3 text-dark">Задание 3</a>
+									</li>
+									<li>
+										<a href="#" class="pl-3 text-dark">Задание 4</a>
+									</li>
+								</ul>
+							</div>
+					</div>
+					<div class="tab-menu">
+					<div class="head-menu text-muted bg-white block border-top-0">
+						<div href="#" class="p-2">Тема 2 <div class="float-right"><a href="#" class="text-muted menu-visible icon-hover" title="Свернуть / Развернуть"><i class="fas fa-angle-down"></i></a></div></div>
+					</div>
+						<div class="row menu-body" style="display: none;">
+							<ul class="col-lg-12 menu">
+								<li>
+									<a href="profile.html" class="pl-3 text-dark active">Задание 1</a>
+								</li>
+								<li>
+									<a href="messages.html" class="pl-3 text-dark">Задание 2</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 text-dark">Задание 3</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 text-dark">Задание 4</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab-menu">
+					<div class="head-menu text-muted bg-white block border-top-0">
+						<div href="#" class="p-2">Тема 3 <div class="float-right"><a href="#" class="text-muted menu-visible icon-hover" title="Свернуть / Развернуть"><i class="fas fa-angle-down"></i></a></div></div>
+					</div>
+						<div class="row menu-body" style="display: none;">
+							<ul class="col-lg-12 menu">
+								<li>
+									<a href="profile.html" class="pl-3 text-dark active">Задание 1</a>
+								</li>
+								<li>
+									<a href="messages.html" class="pl-3 text-dark">Задание 2</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 text-dark">Задание 3</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 text-dark">Задание 4</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab-menu">
+					<div class="head-menu text-muted bg-white block border-top-0">
+						<div href="#" class="p-2">Тема 4 <div class="float-right"><a href="#" class="text-muted menu-visible icon-hover" title="Свернуть / Развернуть"><i class="fas fa-angle-down"></i></a></div></div>
+					</div>
+						<div class="row menu-body" style="display: none;">
+							<ul class="col-lg-12 menu">
+								<li>
+									<a href="profile.html" class="pl-3 text-dark active">Задание 1</a>
+								</li>
+								<li>
+									<a href="messages.html" class="pl-3 text-dark">Задание 2</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 text-dark">Задание 3</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 text-dark">Задание 4</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab-menu">
+					<div class="head-menu text-muted bg-white block border-top-0">
+						<div href="#" class="p-2">Тема 5 <div class="float-right"><a href="#" class="text-muted menu-visible icon-hover" title="Свернуть / Развернуть"><i class="fas fa-angle-down"></i></a></div></div>
+					</div>
+					<div class="row menu-body" style="display: none;">
+						<ul class="col-lg-12 menu">
+							<li>
+								<a href="profile.html" class="pl-3 text-dark active">Задание 1</a>
+							</li>
+							<li>
+								<a href="messages.html" class="pl-3 text-dark">Задание 2</a>
+							</li>
+							<li>
+								<a href="#" class="pl-3 text-dark">Задание 3</a>
+							</li>
+							<li>
+								<a href="#" class="pl-3 text-dark">Задание 4</a>
+							</li>
+						</ul>
+					</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-7">
+			<div class="my-2 tasks-block">
+				<h6 class="pb-1 mb-2"><b>Тема 1</b>. Простые SQL-запросы</h6>
+				<ul>
+					<li><a href="#" class="col-md-2 text-center fs09">Теория</a></li>
+					<li><a href="#" class="col-md-2 text-center fs09">Теория</a></li>
+				</ul>
+					<div class="task">
+						<div class="row">
+							<div class="col-md-12">
+								<p>
+									<strong class="d-block text-dark mb-2">Задание #1</strong>
+									Первая тестовая олимпиада лёгкого уровня.Первая тестовая олимпиада лёгкого уровня.Первая тестовая олимпиада лёгкого уровня.
+								</p>
+								<hr>
+								<div class="block-bottom mt-2 row">
+	                                <div class="info col-lg-8 col-md-8 col-sm-7 align-self-center">
+	                                    <a href="#" title="Автор" class="mr-3 text-secondary"><i class="fas fa-user"></i> Pirogov</a><a href="#" title="Дата" class="mr-2 text-secondary"><i class="fas fa-calendar-alt"></i> 12.03.2018</a><span title="Оставшееся время"><i class="fas fa-clock"></i> 12:50</span>
+	                                </div>
+	                                <div class="col-lg-4 col-md-4 col-sm-5 actions">
+		                                <div class="row">
+			                                <div class="col-lg-6 col-md-12 col-6">
+			                                    <a class="text-secondary" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<div class='p-1 text-left'>Кол-во заданий: <b>6</b> <br> Сложность: <b>простая</b> <br> Тема: <b>Простые SQL-запросы</b> </div>" href="#">Подробнее</a>
+			                                </div>
+			                                <div class="col-lg-6 col-md-12 col-6">
+			                                    <a href="#" class="">Начать</a>
+			                                </div>
+		                                </div>
+	                                </div>
+	                            </div>
+							</div>
+						</div>
+					</div>
+					<div class="task">
+						<div class="row">
+							<div class="col-md-12">
+								<p>
+									<strong class="d-block text-dark mb-2">Задание #1</strong>
+									Первая тестовая олимпиада лёгкого уровня.Первая тестовая олимпиада лёгкого уровня.Первая тестовая олимпиада лёгкого уровня.
+								</p>
+								<hr>
+								<div class="block-bottom mt-2 row">
+	                                <div class="info col-lg-8 col-md-8 col-sm-7 align-self-center">
+	                                    <a href="#" title="Автор" class="mr-3 text-secondary"><i class="fas fa-user"></i> Pirogov</a><a href="#" title="Дата" class="mr-2 text-secondary"><i class="fas fa-calendar-alt"></i> 12.03.2018</a><span title="Оставшееся время"><i class="fas fa-clock"></i> 12:50</span>
+	                                </div>
+	                                <div class="col-lg-4 col-md-4 col-sm-5 actions">
+		                                <div class="row">
+			                                <div class="col-lg-6 col-md-12 col-6">
+			                                    <a class="text-secondary" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<div class='p-1 text-left'>Кол-во заданий: <b>6</b> <br> Сложность: <b>простая</b> <br> Тема: <b>Простые SQL-запросы</b> </div>" href="#">Подробнее</a>
+			                                </div>
+			                                <div class="col-lg-6 col-md-12 col-6">
+			                                    <a href="#" class="">Начать</a>
+			                                </div>
+		                                </div>
+	                                </div>
+	                            </div>
+							</div>
+						</div>
+					</div>
+					<div class="task">
+						<div class="row">
+							<div class="col-md-12">
+								<p>
+									<strong class="d-block text-dark mb-2">Задание #1</strong>
+									Первая тестовая олимпиада лёгкого уровня.Первая тестовая олимпиада лёгкого уровня.Первая тестовая олимпиада лёгкого уровня.
+								</p>
+								<hr>
+								<div class="block-bottom mt-2 row">
+	                                <div class="info col-lg-8 col-md-8 col-sm-7 align-self-center">
+	                                    <a href="#" title="Автор" class="mr-3 text-secondary"><i class="fas fa-user"></i> Pirogov</a><a href="#" title="Дата" class="mr-2 text-secondary"><i class="fas fa-calendar-alt"></i> 12.03.2018</a><span title="Оставшееся время"><i class="fas fa-clock"></i> 12:50</span>
+	                                </div>
+	                                <div class="col-lg-4 col-md-4 col-sm-5 actions">
+		                                <div class="row">
+			                                <div class="col-lg-6 col-md-12 col-6">
+			                                    <a class="text-secondary" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<div class='p-1 text-left'>Кол-во заданий: <b>6</b> <br> Сложность: <b>простая</b> <br> Тема: <b>Простые SQL-запросы</b> </div>" href="#">Подробнее</a>
+			                                </div>
+			                                <div class="col-lg-6 col-md-12 col-6">
+			                                    <a href="#" class="">Начать</a>
+			                                </div>
+		                                </div>
+	                                </div>
+	                            </div>
+							</div>
+						</div>
+					</div>
+					<div class="task">
+						<div class="row">
+							<div class="col-md-12">
+								<p>
+									<strong class="d-block text-dark mb-2">Задание #1</strong>
+									Первая тестовая олимпиада лёгкого уровня.Первая тестовая олимпиада лёгкого уровня.Первая тестовая олимпиада лёгкого уровня.
+								</p>
+								<hr>
+								<div class="block-bottom mt-2 row">
+	                                <div class="info col-lg-8 col-md-8 col-sm-7 align-self-center">
+	                                    <a href="#" title="Автор" class="mr-3 text-secondary"><i class="fas fa-user"></i> Pirogov</a><a href="#" title="Дата" class="mr-2 text-secondary"><i class="fas fa-calendar-alt"></i> 12.03.2018</a><span title="Оставшееся время"><i class="fas fa-clock"></i> 12:50</span>
+	                                </div>
+	                                <div class="col-lg-4 col-md-4 col-sm-5 actions">
+		                                <div class="row">
+			                                <div class="col-lg-6 col-md-12 col-6">
+			                                    <a class="text-secondary" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<div class='p-1 text-left'>Кол-во заданий: <b>6</b> <br> Сложность: <b>простая</b> <br> Тема: <b>Простые SQL-запросы</b> </div>" href="#">Подробнее</a>
+			                                </div>
+			                                <div class="col-lg-6 col-md-12 col-6">
+			                                    <a href="#" class="">Начать</a>
+			                                </div>
+		                                </div>
+	                                </div>
+	                            </div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="offset-md-10 col-md-2 text-center beauty-block fs09">Больше</a>
+			</div>
+<!-- 			<div class="col-md-2">
+				<div class="mt-2">
+					<div class="search text-muted bg-white">
+						<input type="text" placeholder="Поиск">
+					</div>
+				</div>
+
+			</div> -->
+			</div>
+		</main>
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery.touchSwipe.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+		 $('.swipe').swipe({
+			swipeStatus:function(event, phase, direction, distance) {
+				if (phase == "move" && direction == "left") {
+					$(this).css("margin-right", distance);
+					$(this).css("margin-left", -distance);
+				}
+				
+				if (phase == "cancel") {
+					var length;
+					var width = $(this).css("width");
+					width = width.substr(0,width.length-2);
+					if ($(window).width() <= 768) length = Number(width) / 2; else length = Number(width) / 3;
+					
+					if (distance > length) {
+						$(this).css("max-height", $(this).css("height"));
+						$(this).animate({width: "hide"}, 400, function(){
+							$(this).remove();
+						});
+					} else {
+						$(this).animate({margin: 0}, 400);  
+					}
+				}
+			},
+			triggerOnTouchEnd:false,
+			threshold:5000
+		 });
+
+		$(document).ready(function(){
+		 $('.menu-visible').click(function(){
+		 var menuBody = $(this).parent().parent().parent().parent().children('div.menu-body');
+		 
+		 if (menuBody.attr("style") == "display: none;") {
+	 		 menuBody.animate({height: "show"},300);
+			 $(this).html('<i class="fas fa-angle-up"></i>');
+		 } else {
+	 		 menuBody.animate({height: "hide"},300);
+			 $(this).html('<i class="fas fa-angle-down"></i>');	 
+		 }
+		  return false;
+		 });
+		});
+
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		});
+		});
+		</script>
+		<script src="js/vendor/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/offcanvas.js"></script>
+	</body>
+</html>

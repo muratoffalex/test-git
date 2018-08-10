@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="System of tasks for SQL-requests">
+		<meta name="author" content="muratoffalex@gmail.com">
+		<link rel="icon" href="favicon.ico">
+
+		<title>SQL-Trainer</title>
+
+		<!-- Bootstrap core CSS -->
+		 <link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<!-- Custom styles for this template -->
+		<link href="css/offcanvas.css" rel="stylesheet">
+		<link href="css/fontawesome-all.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body class="bg-light">
+		<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+			<div class="container">
+			<a class="navbar-brand" href="index.html">SQL-система</a>
+			<button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+				<span class="navbar-toggler-icon"></span>
+				<span class="badge badge-pill bg-dark align-text-bottom">0</span>
+			</button>
+
+			<div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							Оповещения
+							<span class="badge badge-pill bg-danger align-text-bottom">1</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="profile.html">Профиль</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Управление</a>
+						<div class="dropdown-menu" aria-labelledby="dropdown01">
+							<a class="dropdown-item" href="#"><i class="fas fa-users-cog"></i> Пользователи</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-th-list"></i> Категории</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-database"></i> Базы данных</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-tasks"></i> Задания</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-check"></i> Результаты</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="nav-scroller bg-white box-shadow">
+			<div class="container">
+    			<nav class="nav nav-underline">
+    				<a class="nav-link" href="index.html">Главная</a>        
+    				<a class="nav-link" href="finish.html">Завершённые</a>
+    				<a class="nav-link" href="notfinish.html">
+    					Незавершённые
+    					<span class="badge badge-pill bg-light align-text-bottom">3</span>
+    				</a>
+    				<a class="nav-link" href="tourney.html">Турниры</a>
+    				<a class="nav-link" href="tasks.html">Задания</a>
+    			</nav>
+    		    </div>
+		</div>
+
+		<main role="main" class="container">
+<!--
+			<div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded box-shadow">
+				<img class="mr-3" src="https://getbootstrap.com/assets/brand/bootstrap-outline.svg" alt="" width="48" height="48">
+				<div class="lh-100">
+					<h6 class="mb-0 text-white lh-100">Bootstrap</h6>
+					<small>Since 2011</small>
+				</div>
+			</div>
+-->
+			
+				<div class="offset-lg-3 col-lg-6 mt-4 box-shadow-b p-4 bg-white">
+					<h2 class="text-center">Авторизация</h2>
+					<hr class="-mlr-4 mt-4 mb-3">
+					<form method="POST" action="" class="offset-lg-2 col-lg-8">
+						<div class="form-group">
+							<label for="inputLogin">Логин</label>
+							<input type="text" class="form-control" id="inputLogin" name="login" placeholder="Введите логин" required>
+						</div>
+						<div class="form-group">
+							<label for="inputPassword">Пароль</label>
+							<input type="password" class="form-control" id="inputPassword" name="password" placeholder="Пароль" required>
+						</div>
+	 					<div class="form-check mb-3">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+						</div>
+						<div class="form-group">
+							<button type="submit" name="submit" class="btn btn-success col-md-4">Войти</button>
+							<small class="float-right mt-2">Нет аккаунта? <a href="?p=registration">Зарегистрировать</a></small>
+						</div>
+					</form>
+				</div>
+		
+		
+		</main>
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/jquery-3.2.1.slim.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-slim.min.js"><\/script>')</script>
+		<script src="js/vendor/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/vendor/holder.min.js"></script>
+		<script src="js/offcanvas.js"></script>
+	</body>
+</html>

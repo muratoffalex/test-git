@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="System of tasks for SQL-requests">
+		<meta name="author" content="muratoffalex@gmail.com">
+		<link rel="icon" href="favicon.ico">
+
+		<title>SQL-Trainer</title>
+
+		<!-- Bootstrap core CSS -->
+		 <link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<!-- Custom styles for this template -->
+		<link href="css/offcanvas.css" rel="stylesheet">
+		<link href="css/fontawesome-all.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body class="bg-light">
+		<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+			<div class="container">
+			<a class="navbar-brand" href="index.html">SQL-система</a>
+			<button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+				<span class="navbar-toggler-icon"></span>
+				<span class="badge badge-pill bg-dark align-text-bottom">0</span>
+			</button>
+
+			<div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							Оповещения
+							<span class="badge badge-pill bg-danger align-text-bottom">1</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="profile.html">Профиль</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Управление</a>
+						<div class="dropdown-menu" aria-labelledby="dropdown01">
+							<a class="dropdown-item" href="#"><i class="fas fa-users-cog"></i> Пользователи</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-th-list"></i> Категории</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-database"></i> Базы данных</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-tasks"></i> Задания</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-check"></i> Результаты</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="nav-scroller bg-white box-shadow">
+			<div class="container">
+				<nav class="nav nav-underline">
+					<a class="nav-link" href="index.html">Главная</a>        
+					<a class="nav-link" href="finish.html">Завершённые</a>
+					<a class="nav-link" href="notfinish.html">
+						Незавершённые
+						<span class="badge badge-pill bg-light align-text-bottom">3</span>
+					</a>
+					<a class="nav-link" href="tourney.html">Турниры</a>
+					<a class="nav-link" href="tasks.html">Задания</a>
+				</nav>
+				</div>
+		</div>
+
+		<main role="main" class="container">
+
+			<div class="my-3 p-3 bg-white rounded box-shadow">
+				<h3 class="pb-2 mb-0 text-center">Олимпиада #3</h3>
+				<div class="row">
+					<div class="offset-md-3 col-md-6">
+						<div class="col-md-12">
+							<img src="images/checkmark.png" class="mx-auto d-block w-50">
+						</div>
+
+						<div class="col-md-12 col-12 text-success">
+							<div class="row">
+								<div class="col-md-6">
+									<small>Время выполнения: <strong>15 мин 24 сек</strong></small>
+								</div>
+								<div class="col-md-6">
+									<small>Количество правильных ответов: <strong>8</strong></small>
+								</div>
+								<div class="col-md-6">
+									<small>Количество попыток: <strong>31</strong></small>
+								</div>
+								<div class="col-md-6">
+									<small>Количество удачных попыток: <strong>8</strong></small>
+								</div>
+								<div class="col-md-6">
+									<small>Количество неудачных попыток: <strong>8</strong></small>
+								</div>
+								<div class="offset-md-3 col-md-6 mt-3">
+									<a href="index.html" class="btn btn-success w-100">Продолжить</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+				
+
+		</main>
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/jquery-3.2.1.slim.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-slim.min.js"><\/script>')</script>
+		<script src="js/vendor/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/vendor/holder.min.js"></script>
+		<script src="js/offcanvas.js"></script>
+		<script src="js/codemirror.js"></script>
+		<script src="js/sql.js"></script>
+		<script type="text/javascript"> 
+			CodeMirror.fromTextArea(document.getElementById('text-task'), { mode: 'text/x-pgsql', lineNumbers: true, matchBrackets: true})
+		</script>
+	</body>
+</html>

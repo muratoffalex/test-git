@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="System of tasks for SQL-requests">
+	<meta name="author" content="muratoffalex@gmail.com">
+	<link rel="icon" href="favicon.ico">
+
+	<title>SQL-Trainer</title>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<!-- Custom styles for this template -->
+	<link href="css/offcanvas.css" rel="stylesheet">
+	<link href="css/fontawesome-all.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class="bg-light">
+	<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">SQL-система</a>
+			<button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+				<span class="navbar-toggler-icon"></span>
+				<span class="badge badge-pill bg-dark align-text-bottom">0</span>
+			</button>
+
+			<div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							Оповещения
+							<span class="badge badge-pill bg-danger align-text-bottom">1</span>
+						</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="profile.html">Профиль</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Управление</a>
+						<div class="dropdown-menu" aria-labelledby="dropdown01">
+							<a class="dropdown-item" href="#"><i class="fas fa-users-cog"></i> Пользователи</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-th-list"></i> Категории</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-database"></i> Базы данных</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-tasks"></i> Задания</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-check"></i> Результаты</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="nav-scroller bg-white box-shadow">
+			<div class="container">
+				<nav class="nav nav-underline">
+					<a class="nav-link" href="index.html">Главная</a>        
+					<a class="nav-link" href="finish.html">Завершённые</a>
+					<a class="nav-link" href="notfinish.html">
+						Незавершённые
+						<span class="badge badge-pill bg-light align-text-bottom">3</span>
+					</a>
+					<a class="nav-link" href="tourney.html">Турниры</a>
+					<a class="nav-link" href="tasks.html">Задания</a>
+				</nav>
+			</div>
+		</div>
+
+		<main role="main" class="container">
+<!--       <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded box-shadow">
+				<img class="mr-3" src="https://getbootstrap.com/assets/brand/bootstrap-outline.svg" alt="" width="48" height="48">
+				<div class="lh-100">
+					<h6 class="mb-0 text-white lh-100">Bootstrap</h6>
+					<small>Since 2011</small>
+				</div>
+			</div> -->
+			<div class="row">
+
+				<div class="col-lg-3">
+					<div class="my-3 bg-white rounded box-shadow">
+						<h4 class="p-2 pl-3">Меню <div class="float-right mr-3 mt-1"><i class="fas fa-angle-up"></i></div></h4>
+						<div class="row">
+							<ul class="col-lg-12 menu">
+								<li>
+									<a href="profile.html" class="pl-3 p-1 text-dark"><i class="fas fa-user"></i> Личные данные</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 p-1 text-dark"><i class="fas fa-edit"></i> Изменить данные</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 p-1 text-dark"><i class="fas fa-key"></i> Изменить пароль</a>
+								</li>
+								<li>
+									<a href="messages.html" class="pl-3 p-1 text-dark"><i class="fas fa-comments"></i> Сообщения</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 p-1 text-dark"><i class="fas fa-trophy"></i> Достижения</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 p-1 text-dark border-bottom"><i class="fas fa-sign-out-alt"></i> Выход</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="my-3 bg-white rounded box-shadow">
+						<div class="block">
+							<h4 class="p-2 pl-3">Управление <div class="float-right mr-3 mt-1"><i class="fas fa-angle-up"></i></div></h4>
+						</div>
+						<div class="row">
+							<ul class="col-lg-12 menu">
+								<li>
+									<a href="users.html" class="pl-3 p-1 text-dark active"><i class="fas fa-users-cog"></i> Пользователи</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 p-1 text-dark"><i class="fas fa-th-list"></i> Категории</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 p-1 text-dark"><i class="fas fa-database"></i> Базы данных</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 p-1 text-dark"><i class="fas fa-tasks"></i> Задания</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 p-1 text-dark border-bottom"><i class="fas fa-check"></i> Результаты</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="col-lg-9">
+					<div class="my-3 p-3 bg-white rounded box-shadow">
+						<h3 class="pb-2 mb-3">Пользователи</h3>
+
+						<div class="row">
+							<div class="offset-md-9 col-md-3 mb-2">
+								<select class="custom-select" name="role">
+									<option value="2">Студенты</option>
+									<option value="3">Преподаватели</option>
+								</select>
+							</div>
+							<div class="col-md-12">
+								<div class="table-responsive">
+
+									<table class="table table-striped table-bordered box-shadow col-md-12">
+							          <thead>
+							            <tr>
+							              <th scope="col">ИД</th>
+							              <th scope="col">Логин</th>
+							              <th scope="col">ФИО</th>
+							              <th scope="col" class="text-center">Действия</th>
+							            </tr>
+							          </thead>
+							          <tbody>
+										<tr>
+											<td>3</td>
+											<td>s15080566</td>
+											<td>Муратов Александр Владимирович</td>
+											<td>
+		                  	                  	<div class="btn-toolbar justify-content-start" role="toolbar" aria-label="Toolbar with button groups">
+				                  					<div class="btn-group mr-1" role="group" aria-label="Basic example">
+						                  				<button type="submit" class="btn btn-success btn-sm" name="deactivate" form="user5">Деактивировать</button>
+							                  			<button type="submit" class="btn btn-secondary btn-sm" name="resetPassword" form="user5">Сбросить пароль</button>
+									  		        </div>
+									  		        <div class="btn-group" role="group">
+									  					<button type="submit" class="btn btn-danger btn-sm" name="delUser" title="Удалить">×</button>
+									  				</div>
+				                  					<div class="btn-group mt-1" role="group">
+										  				<button type="submit" class="btn btn-primary btn-sm" name="save" form="user5">Редактировать</button>
+								  					</div>
+								  	            </div>
+											</td>
+										</tr>
+										<tr>
+											<td>4</td>
+											<td>s15080596</td>
+											<td>Макарцев Артём Вячеславович</td>
+											<td>
+		                  	                  	<div class="btn-toolbar justify-content-start" role="toolbar" aria-label="Toolbar with button groups">
+				                  					<div class="btn-group mr-1" role="group" aria-label="Basic example">
+						                  				<button type="submit" class="btn btn-success btn-sm" name="deactivate" form="user5">Деактивировать</button>
+							                  			<button type="submit" class="btn btn-secondary btn-sm" name="resetPassword" form="user5">Сбросить пароль</button>
+									  		        </div>
+									  		        <div class="btn-group" role="group">
+									  					<button type="submit" class="btn btn-danger btn-sm" name="delUser" title="Удалить">×</button>
+									  				</div>
+				                  					<div class="btn-group mt-1" role="group">
+										  				<button type="submit" class="btn btn-primary btn-sm" name="save" form="user5">Редактировать</button>
+								  					</div>
+								  	            </div>
+											</td>
+										</tr>
+										<tr>
+											<td>5</td>
+											<td>s15080582</td>
+											<td>Сорокин Юрий Сергеевич</td>
+											<td>
+		                  	                  	<div class="btn-toolbar justify-content-start" role="toolbar" aria-label="Toolbar with button groups">
+				                  					<div class="btn-group mr-1" role="group" aria-label="Basic example">
+						                  				<button type="submit" class="btn btn-success btn-sm" name="deactivate" form="user5">Деактивировать</button>
+							                  			<button type="submit" class="btn btn-secondary btn-sm" name="resetPassword" form="user5">Сбросить пароль</button>
+									  		        </div>
+									  		        <div class="btn-group" role="group">
+									  					<button type="submit" class="btn btn-danger btn-sm" name="delUser" title="Удалить">×</button>
+									  				</div>
+				                  					<div class="btn-group mt-1" role="group">
+										  				<button type="submit" class="btn btn-primary btn-sm" name="save" form="user5">Редактировать</button>
+								  					</div>
+								  	            </div>
+											</td>
+										</tr>
+										<tr>
+											<td>6</td>
+											<td>s15080585</td>
+											<td>Разбойкина Дарья Алексеевна</td>
+											<td>
+		                  	                  	<div class="btn-toolbar justify-content-start" role="toolbar" aria-label="Toolbar with button groups">
+				                  					<div class="btn-group mr-1" role="group" aria-label="Basic example">
+						                  				<button type="submit" class="btn btn-success btn-sm" name="deactivate" form="user5">Деактивировать</button>
+							                  			<button type="submit" class="btn btn-secondary btn-sm" name="resetPassword" form="user5">Сбросить пароль</button>
+									  		        </div>
+									  		        <div class="btn-group" role="group">
+									  					<button type="submit" class="btn btn-danger btn-sm" name="delUser" title="Удалить">×</button>
+									  				</div>
+				                  					<div class="btn-group mt-1" role="group">
+										  				<button type="submit" class="btn btn-primary btn-sm" name="save" form="user5">Редактировать</button>
+								  					</div>
+								  	            </div>
+											</td>
+										</tr>
+										<tr>
+											<td>7</td>
+											<td>s15080596</td>
+											<td>Никифоров Кирилл Александрович</td>
+											<td>
+		                  	                  	<div class="btn-toolbar justify-content-start" role="toolbar" aria-label="Toolbar with button groups">
+				                  					<div class="btn-group mr-1" role="group" aria-label="Basic example">
+						                  				<button type="submit" class="btn btn-success btn-sm" name="deactivate" form="user5">Деактивировать</button>
+							                  			<button type="submit" class="btn btn-secondary btn-sm" name="resetPassword" form="user5">Сбросить пароль</button>
+									  		        </div>
+									  		        <div class="btn-group" role="group">
+									  					<button type="submit" class="btn btn-danger btn-sm" name="delUser" title="Удалить">×</button>
+									  				</div>
+				                  					<div class="btn-group mt-1" role="group">
+										  				<button type="submit" class="btn btn-primary btn-sm" name="save" form="user5">Редактировать</button>
+								  					</div>
+								  	            </div>
+											</td>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td>s15080584</td>
+											<td>Политов Вадим Юрьевич</td>
+											<td>
+		                  	                  	<div class="btn-toolbar justify-content-start" role="toolbar" aria-label="Toolbar with button groups">
+				                  					<div class="btn-group mr-1" role="group" aria-label="Basic example">
+						                  				<button type="submit" class="btn btn-success btn-sm" name="deactivate" form="user5">Деактивировать</button>
+							                  			<button type="submit" class="btn btn-secondary btn-sm" name="resetPassword" form="user5">Сбросить пароль</button>
+									  		        </div>
+									  		        <div class="btn-group" role="group">
+									  					<button type="submit" class="btn btn-danger btn-sm" name="delUser" title="Удалить">×</button>
+									  				</div>
+				                  					<div class="btn-group mt-1" role="group">
+										  				<button type="submit" class="btn btn-primary btn-sm" name="save" form="user5">Редактировать</button>
+								  					</div>
+								  	            </div>
+											</td>
+										</tr>
+										<tr>
+											<td>9</td>
+											<td>s15080587</td>
+											<td>Бабаев Мердан Керимович</td>
+											<td>
+		                  	                  	<div class="btn-toolbar justify-content-start" role="toolbar" aria-label="Toolbar with button groups">
+				                  					<div class="btn-group mr-1" role="group" aria-label="Basic example">
+						                  				<button type="submit" class="btn btn-success btn-sm" name="deactivate" form="user5">Деактивировать</button>
+							                  			<button type="submit" class="btn btn-secondary btn-sm" name="resetPassword" form="user5">Сбросить пароль</button>
+									  		        </div>
+									  		        <div class="btn-group" role="group">
+									  					<button type="submit" class="btn btn-danger btn-sm" name="delUser" title="Удалить">×</button>
+									  				</div>
+				                  					<div class="btn-group mt-1" role="group">
+										  				<button type="submit" class="btn btn-primary btn-sm" name="save" form="user5">Редактировать</button>
+								  					</div>
+								  	            </div>
+											</td>
+										</tr>
+							          </tbody>
+							      </table>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<script src="js/jquery-3.2.1.slim.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-slim.min.js"><\/script>')</script>
+		<script src="js/vendor/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/vendor/holder.min.js"></script>
+		<script src="js/offcanvas.js"></script>
+	</body>
+	</html>

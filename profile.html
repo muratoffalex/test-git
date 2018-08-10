@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="System of tasks for SQL-requests">
+		<meta name="author" content="muratoffalex@gmail.com">
+		<link rel="icon" href="favicon.ico">
+
+		<title>SQL-Trainer</title>
+
+		<!-- Bootstrap core CSS -->
+		 <link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<!-- Custom styles for this template -->
+		<link href="css/offcanvas.css" rel="stylesheet">
+		<link href="css/fontawesome-all.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<style type="text/css">
+		 .menu-body {display:block;}
+		 .menu-change {cursor:pointer;}
+		</style>
+	</head>
+
+	<body class="bg-light">
+		<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+			<div class="container">
+			<a class="navbar-brand" href="index.html"><strong>SQL</strong>-система</a>
+				<button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					<span class="badge badge-pill bg-dark align-text-bottom">1</span>
+				</button>
+
+			<div class="navbar-collapse collapse" id="menu">
+				<ul class="navbar-nav main mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="profile.html">Профиль</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Управление</a>
+						<div class="dropdown-menu main" aria-labelledby="dropdown01">
+							<a class="dropdown-item" href="#"><i class="fas fa-users-cog"></i> Пользователи</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-th-list"></i> Категории</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-database"></i> Базы данных</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-tasks"></i> Задания</a>
+							<a class="dropdown-item" href="#"><i class="fas fa-check"></i> Результаты</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Выход</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="#"><span class="badge badge-pill align-text-bottom">Сообщения 1</span><i class="fas fa-comments"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"><span class="badge badge-pill align-text-bottom">Оповещений нет</span><i class="far fa-bell"></i></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="nav-scroller bg-white border-custom">
+			<div class="container">
+				<nav class="nav nav-underline">
+					<a class="nav-link" href="index.html">Главная</a>        
+					<a class="nav-link" href="finish.html">Завершённые</a>
+					<a class="nav-link" href="notfinish.html">
+						Незавершённые
+						<span class="badge badge-pill bg-light align-text-bottom">3</span>
+					</a>
+					<a class="nav-link" href="tourney.html">Турниры</a>
+					<a class="nav-link" href="tasks.html">Задания</a>
+				</nav>
+				</div>
+		</div>
+
+		<main role="main" class="container">
+			<div class="row">
+
+				<div class="col-md-3 -mb-3">
+					<div class="my-3 bg-white block">
+					<div class="head-menu text-muted">
+						<div href="#" class="p-2">Меню <div class="float-right"><a href="#" class="text-muted menu-visible icon-hover" title="Свернуть / Развернуть"><i class="fas fa-angle-up"></i></a></div></div>
+					</div>
+						<div class="row menu-body">
+							<ul class="col-lg-12 menu">
+								<li>
+									<a href="profile.html" class="pl-3 text-dark active"><i class="fas fa-user"></i> Мои данные <span class="badge badge-pill align-text-bottom text-muted"><small>Сохранено</small></span></a>
+								</li>
+<!--
+								<li>
+									<a href="#" class="pl-3 text-dark"><i class="fas fa-edit"></i> Изменить данные</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 text-dark"><i class="fas fa-key"></i> Изменить пароль</a>
+								</li>
+-->
+								<li>
+									<a href="messages.html" class="pl-3 text-dark"><i class="fas fa-comments"></i> Сообщения</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 text-dark"><i class="fas fa-trophy"></i> Достижения</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 text-dark"><i class="fas fa-sign-out-alt"></i> Выход</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="my-3 bg-white block">
+					<div class="head-menu text-muted">
+						<div href="#" class="p-2">Управление <div class="float-right"><a href="#" class="menu-visible text-muted icon-hover" title="Свернуть / Развернуть"><i class="fas fa-angle-up"></i></a></div></div>
+					</div>
+						<div class="row menu-body">
+							<ul class="col-lg-12 menu">
+								<li>
+									<a href="users.html" class="pl-3 text-dark"><i class="fas fa-users-cog"></i> Пользователи</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 text-dark"><i class="fas fa-th-list"></i> Категории</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 text-dark"><i class="fas fa-database"></i> Базы данных</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 text-dark"><i class="fas fa-tasks"></i> Задания</a>
+								</li>
+								<li>
+									<a href="#" class="pl-3 text-dark"><i class="fas fa-check"></i> Результаты</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+
+				<div class="col-md-9">
+				<div class="my-3 p-3 bg-white block">
+					<h3 class="pb-2 mb-3">Профиль</h3>
+
+					<div class="row">
+						<div class="col-md-4 text-center">
+							<img class="rounded-circle border" src="images/people1.jpg" width="150" height="150">
+						</div>
+
+
+						<div class="col-md-7 rounded">
+							<h5>Личные данные</h5>
+							<div class="row">
+								<div class="col-md-3">Фамилия: </div>
+								<div class="mb-1 col-md-3"><strong>Муратов</strong></div>
+								<div class="col-md-3">Имя: </div>
+								<div class="mb-1 col-md-3"><strong>Александр</strong></div>
+								<div class="col-md-3">Отчество: </div>
+								<div class="mb-1 col-md-3"><strong>Владимирович</strong></div>
+								<div class="col-md-12 mt-2"><h5>Аккаунт</h5></div>
+								<div class="col-md-3">Логин: </div>
+								<div class="mb-1 col-md-3"><strong>muratoffalex</strong></div>
+							</div>
+						</div>
+					</div>
+<!-- 					<small class="d-block text-right mt-3">
+						<a href="#">Редактировать профиль</a>
+					</small> -->
+				</div>
+
+				<div class="my-3 p-3 bg-white block">
+					<h3 class="pb-2 mb-0">Статистика</h3>
+
+					<div class="media text-muted pt-3 row">
+						<div class="col-md-6 mb-1">Кол-во выполненных заданий: <strong>3</strong></div>
+						<div class="col-md-6 mb-1">Средняя оценка: <strong>4.79</strong></div>
+						<div class="col-md-6 mb-1">Кол-во ошибок: <strong>3</strong></div>
+						<div class="col-md-6 mb-1">Кол-во выполненных заданий: <strong>3</strong></div>
+						<div class="col-md-6 mb-1">Среднее время выполнения: <strong>3</strong></div>
+					</div>
+
+					<small class="d-block text-right mt-3">
+						<a href="#">Посмотреть все</a>
+					</small>
+				</div>
+
+<!-- 				<div class="my-3 p-3 bg-white rounded box-shadow">
+					<h3 class="pb-2 mb-0">Выполненные задания</h3>
+
+					<div class="media text-muted pt-3">
+						<div class="list-group" style="width: 100%;">
+
+						  <a href="#" class="list-group-item list-group-item-action list-group-item-success mb-2">This is a success list group item</a>
+							<div class="row pl-3 mb-2">
+								<div class="col-md-4 mb-1">Количество попыток: <strong>3</strong></div>
+								<div class="col-md-4 mb-1">Время выполнения: <strong>4.79</strong></div>
+								<div class="col-md-4 mb-1">Количество ошибок: <strong>3</strong></div>
+								<div class="col-md-4 mb-1">Оценка: <strong>4</strong></div>
+							</div>
+						  <a href="#" class="list-group-item list-group-item-action list-group-item-success mb-2">This is a success list group item</a>
+						  <a href="#" class="list-group-item list-group-item-action list-group-item-success mb-2">This is a success list group item</a>
+						  <a href="#" class="list-group-item list-group-item-action list-group-item-danger">This is a danger list group item</a>
+
+						</div>
+					</div>
+
+					<small class="d-block text-right mt-3">
+						<a href="#">Посмотреть все</a>
+					</small>
+				</div> -->
+		</div>
+	</div>
+</main>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+		 $('.menu-visible').click(function(){
+		 var menuBody = $(this).parent().parent().parent().parent().children('div.menu-body');
+		 
+		 if (menuBody.attr("style") == "display: none;") {
+	 		 menuBody.animate({height: "show"},300);
+			 $(this).html('<i class="fas fa-angle-up"></i>');
+		 } else {
+	 		 menuBody.animate({height: "hide"},300);
+			 $(this).html('<i class="fas fa-angle-down"></i>');	 
+		 }
+		  return false;
+		 });
+		});
+		</script>
+		<script src="js/vendor/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/offcanvas.js"></script>
+	</body>
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="System of tasks for SQL-requests">
+        <meta name="author" content="muratoffalex@gmail.com">
+        <link rel="icon" href="favicon.ico">
+
+        <title>SQL-Trainer</title>
+
+        <!-- Bootstrap core CSS -->
+         <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <!-- Custom styles for this template -->
+        <link href="css/offcanvas.css" rel="stylesheet">
+        <link href="css/fontawesome-all.min.css" rel="stylesheet">
+        <link href="css/codemirror.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body class="bg-light">
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+            <div class="container">
+            <a class="navbar-brand" href="index.html">SQL-система</a>
+            <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+                <span class="navbar-toggler-icon"></span>
+                <span class="badge badge-pill bg-dark align-text-bottom">0</span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Главная <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Оповещения
+                            <span class="badge badge-pill bg-danger align-text-bottom">1</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile.html">Профиль</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Управление</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="#"><i class="fas fa-users-cog"></i> Пользователи</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-th-list"></i> Категории</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-database"></i> Базы данных</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-tasks"></i> Задания</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-check"></i> Результаты</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="nav-scroller bg-white box-shadow">
+            <div class="container">
+                <nav class="nav nav-underline">
+                    <a class="nav-link" href="index.html">Главная</a>        
+                    <a class="nav-link" href="finish.html">Завершённые</a>
+                    <a class="nav-link" href="notfinish.html">
+                        Незавершённые
+                        <span class="badge badge-pill bg-light align-text-bottom">3</span>
+                    </a>
+                    <a class="nav-link" href="tourney.html">Турниры</a>
+                    <a class="nav-link" href="tasks.html">Задания</a>
+                </nav>
+                </div>
+        </div>
+
+		<main role="main" class="container">
+
+			<div class="my-3 p-3 bg-white rounded box-shadow">
+                <div class="task-block mb-2">
+    				<div class="clearfix">
+    					<h3 class="pb-2 mb-0 float-left">Задание 1/12</h3>
+    				</div>
+
+    				<div class="text-muted pt-2 pb-2">
+                        <div class="small"><a href="#">Посмотреть базу данных</a></div>
+    					<p class="pb-3 mb-0 lh-125">
+                            Написать запрос для получения списка: ФИО преподавателя, количество. Здесь «количество» - количество выставленных преподавателями оценок по заданному предмету. 
+    					</p>
+    				</div>
+    				<h5>Ваш ответ</h5>
+    				<div>
+    					<textarea style="height: 300px;" id="text-task">SELECT * FROM Users
+WHERE status = 1
+ORDER BY id;</textarea>
+                        <button type="button" class="btn btn-dark mt-2">Проверить</button>
+    					<button type="button" class="btn btn-secondary mt-2">Сохранить</button>
+    				</div>
+                </div>
+
+                <div class="row border-top">
+                    <div class="offset-md-1 col-md-10 mt-3">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th scope="col">id</th>
+                                  <th scope="col">name</th>
+                                  <th scope="col">Email</th>
+                                  <th scope="col">password_hash</th>
+                                  <th scope="col">salt</th>
+                                  <th scope="col">registered</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td scope="row">1</th>
+                                  <td>Administrator</td>
+                                  <td>admin@example.com</td>
+                                  <td>abbs09s7s6s6</td>
+                                  <td>gt9xbxvx4x30</td>
+                                  <td>2017-08-02</td>
+                                </tr>
+                                <tr>
+                                  <td scope="row">2</th>
+                                  <td>Иван</td>
+                                  <td>ivan@example.com  </td>
+                                  <td>hd6bc00c8c7c665cet</td>
+                                  <td>gs65s4s4sb0x</td>
+                                  <td>2018-01-01</td>
+                                </tr>
+                                <tr>
+                                  <td scope="row">3</th>
+                                  <td>User_01</td>
+                                  <td>user01@example.com</td>
+                                  <td>abbs09s7s6s6</td>
+                                  <td>gs65s4s4sb0x</td>
+                                  <td>2018-05-01</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+			</div>
+
+			<div class="my-3 p-3 bg-white rounded box-shadow">
+				<small class="d-block text-right align-middle">
+					<a href="task_finish.html" class="btn btn-danger float-left">Завершить</a>
+                    <div class="float-left p-4" style="margin-top: -0.9rem;">
+                        Осталось: <strong>11:40</strong>
+                    </div>
+					<button type="button" class="btn btn-secondary">Назад</button>
+					<button type="button" class="btn btn-success">Далее</button>
+				</small>
+			</div>
+
+		</main>
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="js/jquery-3.2.1.slim.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-slim.min.js"><\/script>')</script>
+		<script src="js/vendor/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/vendor/holder.min.js"></script>
+		<script src="js/offcanvas.js"></script>
+        <script src="js/codemirror.js"></script>
+        <script src="js/sql.js"></script>
+        <script type="text/javascript"> 
+            CodeMirror.fromTextArea(document.getElementById('text-task'), { mode: 'text/x-pgsql', lineNumbers: true, matchBrackets: true})
+        </script>
+	</body>
+</html>
